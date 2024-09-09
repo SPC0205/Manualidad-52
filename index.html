@@ -1,0 +1,219 @@
+No problem! I'll update the number inside the moon to "13". Here's the complete code:
+
+<html>
+<head>
+    <style>
+        body {
+            background-color: #000033; /* Dark blue for night sky */
+            margin: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .moon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            height: 100px;
+            background-color: #d9d9d9; /* Light gray for the moon */
+            border-radius: 50%;
+            box-shadow: -20px 0 0 0 #000033; /* Dark blue shadow for crescent effect */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            color: #000033; /* Dark blue for the number */
+        }
+        .star {
+            position: absolute;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(35deg);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            animation: fall 5s linear infinite, twinkle 1.5s infinite;
+        }
+        .star::before {
+            content: '';
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background-color: yellow;
+            transform: rotate(35deg);
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            opacity: 0.5;
+            animation: trail 5s linear infinite;
+        }
+        @keyframes fall {
+            0% {
+                left: -50px;
+                opacity: 1;
+            }
+            100% {
+                left: 100vw;
+                opacity: 0;
+            }
+        }
+        @keyframes twinkle {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        @keyframes trail {
+            0% {
+                left: -50px;
+                opacity: 0.5;
+            }
+            100% {
+                left: 100vw;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="moon">13</div>
+    <div class="star" style="top: 50px; animation-delay: 0s;"></div>
+    <div class="star" style="top: 150px; animation-delay: 1s;"></div>
+    <div class="star" style="top: 250px; animation-delay: 2s;"></div>
+    <div class="star" style="top: 350px; animation-delay: 3s;"></div>
+    <div class="star" style="top: 450px; animation-delay: 4s;"></div>
+    <div class="star" style="top: 550px; animation-delay: 5s;"></div>
+    <div class="star" style="top: 650px; animation-delay: 6s;"></div>
+    <div class="star" style="top: 750px; animation-delay: 7s;"></div>
+    <div class="star" style="top: 850px; animation-delay: 8s;"></div>
+    <div class="star" style="top: 950px; animation-delay: 9s;"></div>
+    <div class="star" style="top: 1050px; animation-delay: 10s;"></div>
+    <div class="star" style="top: 1150px; animation-delay: 11s;"></div>
+    <div class="star" style="top: 1250px; animation-delay: 12s;"></div>
+    <div class="star" style="top: 1350px; animation-delay: 13s;"></div>
+    <div class="star" style="top: 1450px; animation-delay: 14s;"></div>
+    <div class="star" style="top: 1550px; animation-delay: 15s;"></div>
+    <div class="star" style="top: 1650px; animation-delay: 16s;"></div>
+    <div class="star" style="top: 1750px; animation-delay: 17s;"></div>
+    <div class="star" style="top: 1850px; animation-delay: 18s;"></div>
+    <div class="star" style="top: 1950px; animation-delay: 19s;"></div>
+    <div class="star" style="top: 2050px; animation-delay: 20s;"></div>
+    <div class="star" style="top: 2150px; animation-delay: 21s;"></div>
+    <div class="star" style="top: 2250px; animation-delay: 22s;"></div>
+    <div class="star" style="top: 2350px; animation-delay: 23s;"></div>
+    <div class="star" style="top: 2450px; animation-delay: 24s;"></div>
+    <div class="star" style="top: 2550px; animation-delay: 25s;"></div>
+    <div class="star" style="top: 2650px; animation-delay: 26s;"></div>
+    <div class="star" style="top: 2750px; animation-delay: 27s;"></div>
+    <div class="star" style="top: 2850px; animation-delay: 28s;"></div>
+    <div class="star" style="top: 2950px; animation-delay: 29s;"></div>
+    <div class="star" style="top: 3050px; animation-delay: 30s;"></div>
+    <div class="star" style="top: 3150px; animation-delay: 31s;"></div>
+    <div class="star" style="top: 3250px; animation-delay: 32s;"></div>
+    <div class="star" style="top: 3350px; animation-delay: 33s;"></div>
+    <div class="star" style="top: 3450px; animation-delay: 34s;"></div>
+    <div class="star" style="top: 3550px; animation-delay: 35s;"></div>
+    <div class="star" style="top: 3650px; animation-delay: 36s;"></div>
+    <div class="star" style="top: 3750px; animation-delay: 37s;"></div>
+    <div class="star" style="top: 3850px; animation-delay: 38s;"></div>
+    <div class="star" style="top: 3950px; animation-delay: 39s;"></div>
+    <div class="star" style="top: 4050px; animation-delay: 40s;"></div>
+    <div class="star" style="top: 4150px; animation-delay: 41s;"></div>
+    <div class="star" style="top: 4250px; animation-delay: 42s;"></div>
+    <div class="star" style="top: 4350px; animation-delay: 43s;"></div>
+    <div class="star" style="top: 4450px; animation-delay: 44s;"></div>
+    <div class="star" style="top: 4550px; animation-delay: 45s;"></div>
+    <div class="star" style="top: 4650px; animation-delay: 46s;"></div>
+    <div class="star" style="top: 4750px; animation-delay: 47s;"></div>
+    <div class="star" style="top: 4850px; animation-delay: 48s;"></div>
+    <div class="star" style="top: 4950px; animation-delay: 49s;"></div>
+    <div class="star" style="top: 5050px; animation-delay: 50s;"></div>
+    <div class="star" style="top: 5150px; animation-delay: 51s;"></div>
+    <div class="star" style="top: 5250px; animation-delay: 52s;"></div>
+    <div class="star" style="top: 5350px; animation-delay: 53s;"></div>
+    <div class="star" style="top: 5450px; animation-delay: 54s;"></div>
+    <div class="star" style="top: 5550px; animation-delay: 55s;"></div>
+    <div class="star" style="top: 5650px; animation-delay: 56s;"></div>
+    <div class="star" style="top: 5750px; animation-delay: 57s;"></div>
+    <div class="star" style="top: 5850px; animation-delay: 58s;"></div>
+    <div class="star" style="top: 5950px; animation-delay: 59s;"></div>
+    <div class="star" style="top: 6050px; animation-delay: 60s;"></div>
+    <div class="star" style="top: 6150px; animation-delay: 61s;"></div>
+    <div class="star" style="top: 6250px; animation-delay: 62s;"></div>
+    <div class="star" style="top: 6350px; animation-delay: 63s;"></div>
+    <div class="star" style="top: 6450px; animation-delay: 64s;"></div>
+    <div class="star" style="top: 6550px; animation-delay: 65s;"></div>
+    <div class="star" style="top: 6650px; animation-delay: 66s;"></div>
+    <div class="star" style="top: 6750px; animation-delay: 67s;"></div>
+    <div class="star" style="top: 6850px; animation-delay: 68s;"></div>
+    <div class="star" style="top: 6950px; animation-delay: 69s;"></div>
+    <div class="star" style="top: 7050px; animation-delay: 70s;"></div>
+    <div class="star" style="top: 7150px; animation-delay: 71s;"></div>
+    <div class="star" style="top: 7250px; animation-delay: 72s;"></div>
+    <div class="star" style="top: 7350px; animation-delay: 73s;"></div>
+    <div class="star" style="top: 7450px; animation-delay: 74s;"></div>
+    <div class="star" style="top: 7550px; animation-delay: 75s;"></div>
+    <div class="star" style="top: 7650px; animation-delay: 76s;"></div>
+    <div class="star" style="top: 7750px; animation-delay: 77s;"></div>
+    <div class="star" style="top: 7850px; animation-delay: 78s;"></div>
+    <div class="star" style="top: 7950px; animation-delay: 79s;"></div>
+    <div class="star" style="top: 8050px; animation-delay: 80s;"></div>
+    <div class="star" style="top: 8150px; animation-delay: 81s;"></div>
+    <div class="star" style="top: 8250px; animation-delay: 82s;"></div>
+    <div class="star" style="top: 8350px; animation-delay: 83s;"></div>
+    <div class="star" style="top: 8450px; animation-delay: 84s;"></div>
+    <div class="star" style="top: 8550px; animation-delay: 85s;"></div>
+    <div class="star" style="top: 8650px; animation-delay: 86s;"></div>
+    <div class="star" style="top: 8750px; animation-delay: 87s;"></div>
+    <div class="star" style="top: 8850px; animation-delay: 88s;"></div>
+    <div class="star" style="top: 8950px; animation-delay: 89s;"></div>
+    <div class="star" style="top: 9050px; animation-delay: 90s;"></div>
+    <div class="star" style="top: 9150px; animation-delay: 91s;"></div>
+    <div class="star" style="top: 9250px; animation-delay: 92s;"></div>
+    <div class="star" style="top: 9350px; animation-delay: 93s;"></div>
+    <div class="star" style="top: 9450px; animation-delay: 94s;"></div>
+    <div class="star" style="top: 9550px; animation-delay: 95s;"></div>
+    <div class="star" style="top: 9650px; animation-delay: 96s;"></div>
+    <div class="star" style="top: 9750px; animation-delay: 97s;"></div>
+    <div class="star" style="top: 9850px; animation-delay: 98s;"></div>
+    <div class="star" style="top: 9950px; animation-delay: 99s;"></div>
+    <div class="star" style="top: 10050px; animation-delay: 100s;"></div>
+    <div class="star" style="top: 10150px; animation-delay: 101s;"></div>
+    <div class="star" style="top: 10250px; animation-delay: 102s;"></div>
+    <div class="star" style="top: 10350px; animation-delay: 103s;"></div>
+    <div class="star" style="top: 10450px; animation-delay: 104s;"></div>
+    <div class="star" style="top: 10550px; animation-delay: 105s;"></div>
+    <div class="star" style="top: 10650px; animation-delay: 106s;"></div>
+    <div class="star" style="top: 10750px; animation-delay: 107s;"></div>
+    <div class="star" style="top: 10850px; animation-delay: 108s;"></div>
+    <div class="star" style="top: 10950px; animation-delay: 109s;"></div>
+    <div class="star" style="top: 11050px; animation-delay: 110s;"></div>
+    <div class="star" style="top: 11150px; animation-delay: 111s;"></div>
+    <div class="star" style="top: 11250px; animation-delay: 112s;"></div>
+    <div class="star" style="top: 11350px; animation-delay: 113s;"></div>
+    <div class="star" style="top: 11450px; animation-delay: 114s;"></div>
+    <div class="star" style="top: 11550px; animation-delay: 115s;"></div>
+    <div class="star" style="top: 11650px; animation-delay: 116s;"></div>
+    <div class="star" style="top: 11750px; animation-delay: 117s;"></div>
+    <div class="star" style="top: 11850px; animation-delay: 118s;"></div>
+    <div class="star" style="top: 11950px; animation-delay: 119s;"></div>
+    <div class="star" style="top: 12050px; animation-delay: 120s;"></div>
+    <div class="star" style="top: 12150px; animation-delay: 121s;"></div>
+    <div class="star" style="top: 12250px; animation-delay: 122s;"></div>
+    <div class="star" style="top: 12350px; animation-delay: 123s;"></div>
+    <div class="star" style="top: 12450px; animation-delay: 124s;"></div>
+    <div class="star" style="top: 12550px; animation-delay: 125s;"></div>
+    <div class="star" style="top: 12650px; animation-delay: 126s;"></div>
+    <div class="star" style="top: 12750px; animation-delay: 127s;"></div>
+    <div class="star" style="top: 12850px; animation-delay: 128s;"></div>
+    <div class="star" style="top: 12950px; animation-delay: 129s;"></div>
+    <div class="star" style="top: 13050px; animation-delay: 130s;"></div>
+    <div class="star" style="top: 13150px; animation-delay: 131s;"></div>
+    <div class="star" style="top: 13250px; animation-delay: 132s;"></div>
+    <div class="star" style="top: 13350px; animation-delay: 133s;"></div>
+    <div class="star" style="top: 13450px; animation-delay: 134s;"></div>
+    <div class="star" style="top: 13550px; animation-delay: 135s;"></div>
+    <div class="star" style="top: 13650px; animation-delay: 136s;"></div>
+    <div class="star" style="top: 13750px; animation-delay: 137s;"></div>
+    <div class="star" style="top: 13850px; animation-delay: 138s;"></div>
+    <div class="star" style="top: 13950px; animation-delay:
